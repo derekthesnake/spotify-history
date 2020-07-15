@@ -1,0 +1,54 @@
+hr {
+    display: block;
+    border: 0;
+    border-top: 1px solid lightgrey;
+}
+
+.parent-vertical {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 125px;
+}
+
+.center-div {
+    width: 60%;
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.clear {
+    clear: both;
+}
+
+.album-art {
+    float: left;
+    max-width: 125px;
+    max-height: 125px;
+    width: 125px;
+    height: 125px;
+}
+
+.song-info {
+    float: left;
+    margin-left: 50px;
+    font-family:Montserrat, sans-serif;
+    line-height: 9px;
+    white-space: nowrap;
+}
+
+.song-title {
+    font-size: 30px;
+    font-weight: 400;
+}
+.song-artist {
+    font-size: 24px;
+    font-weight: 300;
+    margin-left: 20px;
+}
+.song-album {
+    font-size: 24px;
+    font-weight: 300;
+    margin-left: 20px;
+}

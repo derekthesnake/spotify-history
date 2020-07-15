@@ -1,0 +1,20 @@
+html
+	head
+		title Jade Template
+		link(rel='stylesheet', href='static/spotify-history-style.css')
+		link(rel='stylesheet', href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500&display=swap")
+
+	body
+		div.center-div
+			each track in tracks
+				img.album-art(src=track.image_url)
+				div.song-info
+					p.song-title= track.title
+					p.song-artist= track.artist
+					p.song-album= track.album
+				div.parent-vertical
+					audio(controls="", volume='0.1')
+						source(src=track.preview_url, type="audio/mp3")
+				hr.clear
+			else
+				p.song-title No History Found
